@@ -22,6 +22,7 @@
 		D29EAB8822F72BB9003E5335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D29EAB8B22F72BB9003E5335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D29EAB8D22F72BB9003E5335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29EAB9322F72C47003E5335 /* NSUbiquitousKeyValueStoreDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSUbiquitousKeyValueStoreDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		D29EAB8022F72BB8003E5335 /* NSUbiquitousKeyValueStoreDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D29EAB9322F72C47003E5335 /* NSUbiquitousKeyValueStoreDemo.entitlements */,
 				D29EAB8122F72BB8003E5335 /* AppDelegate.swift */,
 				D29EAB8322F72BB8003E5335 /* ViewController.swift */,
 				D29EAB8522F72BB8003E5335 /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					D29EAB7D22F72BB8003E5335 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,9 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSUbiquitousKeyValueStoreDemo/NSUbiquitousKeyValueStoreDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9MFJK4XRX;
 				INFOPLIST_FILE = NSUbiquitousKeyValueStoreDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +309,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSUbiquitousKeyValueStoreDemo/NSUbiquitousKeyValueStoreDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9MFJK4XRX;
 				INFOPLIST_FILE = NSUbiquitousKeyValueStoreDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
